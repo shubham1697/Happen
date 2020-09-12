@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_Settings">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:id="@+id/settingsAppBar">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Settings"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="22sp"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:src="@drawable/happen"/>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/settingsAppBar2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settingsProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_placeholder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/settingsProfilePic"
+                android:gravity="center"
+                android:text="~username"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/settingsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
